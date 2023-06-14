@@ -1369,7 +1369,7 @@ NNavy = {
 	WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.8,		-- war score gained for every IC of the sunk ship
 	WAR_SCORE_GAIN_FOR_SUNK_CONVOY = 0.25,							-- war score gained for every sunk convoy
 	WAR_SCORE_DECAY_FOR_BUILT_CONVOY = 0.15,  						-- war score deducted when convoy-raided enemy produces one new convoy
-	PEACE_ACTION_TRANSFER_NAVY_EXPERIENCE_RETAINED = 0.15,			-- % of experience to retain after being transferred in a peace conference
+	PEACE_ACTION_TRANSFER_NAVY_EXPERIENCE_RETAINED = 0.25,			-- % of experience to retain after being transferred in a peace conference
 	
 	-- Convoy Priorities START
 	NAVAL_INVASION_PRIORITY = 1,									-- Default convoy priority for naval invasions
