@@ -1,5 +1,0 @@
-foreign_influence = {
-	
-	
-
-}
