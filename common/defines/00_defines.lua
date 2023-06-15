@@ -221,7 +221,7 @@ NDiplomacy = {
 	LICENSE_ACCEPTANCE_PUPPET_BASE = 1000,			-- Acceptance modifier for puppets requesting production licenses.
 	LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 5, 		-- Acceptance modifier for each year of technology difference.
 	LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 20,    -- Acceptance base for tech difference
-	LICENSE_ACCEPTANCE_SAME_FACTION = 1000,			-- Acceptance modifier for being in the same faction
+	LICENSE_ACCEPTANCE_SAME_FACTION = 50,			-- Acceptance modifier for being in the same faction
 
 	WARGOAL_COST_LEND_LEASE = -0.25,                -- cost modifier to wargoaljustification for LL
 	WARGOAL_COST_DOCKING_RIGHTS = -0.2,             -- cost modifier to wargoaljustification for dockign rights
@@ -736,7 +736,7 @@ NMilitary = {
 	WAR_SCORE_LOSSES_RATIO = 0.1,								-- war score gained for every 1000 casualties
 	WAR_SCORE_LOSSES_MULT_IF_CAPITULATED = 0.05, 				-- factor applied to war score gained from casualties if capitulated
 	WAR_SCORE_STRATEGIC_BOMBING_FACTOR = 0.1,  				-- war score gained for every damage made to enemy's building with strategic bombing
-	WAR_SCORE_STRAT_BOMBING_DECAY_PER_CIVILIAN_FACTORY = 0.15,	-- monthly war score deducted from strategic bombing for every civilian factory in service on the bombed enemy side
+	WAR_SCORE_STRAT_BOMBING_DECAY_PER_CIVILIAN_FACTORY = 0.5,	-- monthly war score deducted from strategic bombing for every civilian factory in service on the bombed enemy side
 	WAR_SCORE_AIR_IC_LOSS_FACTOR = 0.08,						-- war score gained for every IC of damage done to an enemy's air mission
 	WAR_SCORE_LAND_DAMAGE_FACTOR = 0.1,          				-- war score gained for every strengh damage done to an enemy's army
 	WAR_SCORE_ATTACKER_AND_WINNER_FACTOR = 1.5,					-- factor applied to war score gained for strength damage done when being the attacker and the winner
@@ -766,9 +766,9 @@ NMilitary = {
 	BASE_DIVISION_BRIGADE_CHANGE_COST = 5,	--Base cost to change a regiment column.
 	BASE_DIVISION_SUPPORT_SLOT_COST = 10, 	--Base cost to unlock a support slot
 
-	MAX_ARMY_EXPERIENCE = 900,			--Max army experience a country can store
-	MAX_NAVY_EXPERIENCE = 900,			--Max navy experience a country can store
-	MAX_AIR_EXPERIENCE = 900,				--Max air experience a country can store
+	MAX_ARMY_EXPERIENCE = 999,			--Max army experience a country can store
+	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store
+	MAX_AIR_EXPERIENCE = 999,				--Max air experience a country can store
 
 	COMBAT_MINIMUM_TIME = 4,			-- Shortest time possible for a combat in hours
 	SPOTTING_QUALITY_DROP_HOURS = 4, 	-- Each X hours the intel quality drops after unit was spotted.
@@ -1365,10 +1365,10 @@ NAir = {
 
 NNavy = {
 	-- Peace Conference
-	WAR_SCORE_GAIN_FOR_SUNK_SHIP_MANPOWER_FACTOR = 1.0,			-- war score gained for every manpower killed when sinking a ship
+	WAR_SCORE_GAIN_FOR_SUNK_SHIP_MANPOWER_FACTOR = 0.2,			-- war score gained for every manpower killed when sinking a ship
 	WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.8,		-- war score gained for every IC of the sunk ship
-	WAR_SCORE_GAIN_FOR_SUNK_CONVOY = 4.0,							-- war score gained for every sunk convoy
-	WAR_SCORE_DECAY_FOR_BUILT_CONVOY = 2.4,  						-- war score deducted when convoy-raided enemy produces one new convoy
+	WAR_SCORE_GAIN_FOR_SUNK_CONVOY = 0.25,							-- war score gained for every sunk convoy
+	WAR_SCORE_DECAY_FOR_BUILT_CONVOY = 0.15,  						-- war score deducted when convoy-raided enemy produces one new convoy
 	PEACE_ACTION_TRANSFER_NAVY_EXPERIENCE_RETAINED = 0.25,			-- % of experience to retain after being transferred in a peace conference
 	
 	-- Convoy Priorities START
